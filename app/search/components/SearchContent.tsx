@@ -1,5 +1,6 @@
 "use client";
 
+import LikeButton from "@/components/LikeButton";
 import MediaItem from "@/components/MediaItem";
 import { Song } from "@/types";
 import { Single_Day } from "next/font/google";
@@ -33,7 +34,7 @@ const SearchContent: React.FC<SearchContentProps> = ({
                             data={song}
                         />
                     </div>
-                {/* add like button */}
+                    <LikeButton songId={song.id} />
                 </div>
             ))}
         </div>
